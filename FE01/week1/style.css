@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    margin-bottom: 2px;
+}
+
+body {
+    margin: auto;
+    margin-top: 10px;
+    width: 60vw;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+header {
+    justify-self: center;
+}
+
+nav {
+    display: flex;
+    justify-self: center
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 8px;
+    text-decoration: underline;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.summary{
+    margin-top: 20px;
+}
+
+.summary p{
+    padding: 12px;
+}
+
+h3 span{
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.skill{
+    display: flex;
+    gap: 20px;
+    padding: 12px;
+}
+
+h4 span{
+    font-weight: 100;
+}
+
+.pTitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px
+}
+
+.pPoints li{
+    padding: 4px 20px;
+}
+
+.openSource{
+    padding: 6px 20px;
+}
+
+.openSource p{
+    margin-top: 10px;
+}
+
+.Edu{
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    position: relative;
+font-weight: 100;
+}
+
+@media screen and (max-width: 1280px){
+    body{
+        width: fit-content;
+        border: none;
+    }
+}
