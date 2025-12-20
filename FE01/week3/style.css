@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 8vh;
+}
+
+.addTask {
+    width: 40vw;
+    padding: 10px;
+    border: rgb(48, 90, 226) 2px solid;
+    border-radius: 10px;
+}
+
+.addTask:focus {
+    outline-style: none;
+    border: rgb(48, 90, 226) 3px solid;
+}
+
+.addBtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #4d75e4;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+    width: 20%;
+    margin: 0px 14px;
+}
+
+#removeAll {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #e44d5f;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+    width: 10%;
+    margin: 0px 14px;
+}
+
+.addBtn:hover {
+    cursor: pointer;
+    padding: 10px 22px;
+    transform-style: preserve-3d;
+}
+
+.task {
+    width: 50%;
+    justify-self: center;
+    margin: 10px 20px;
+}
+
+.task ul li {
+    margin-top: 20px;
+}
+
+#taskForm {
+    display: flex;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
