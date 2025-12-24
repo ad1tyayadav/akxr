@@ -12,7 +12,7 @@ header {
 
 .top {
     display: flex;
-    width: 100%;
+    width: 70%;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -20,7 +20,7 @@ header {
 }
 
 .addTask {
-    width: 40vw;
+    width: 30vw;
     padding: 10px;
     border: rgb(48, 90, 226) 2px solid;
     border-radius: 10px;
@@ -39,7 +39,7 @@ header {
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
     font-weight: bold;
-    width: 20%;
+    width: fit-content;
     margin: 0px 14px;
 }
 
@@ -51,8 +51,9 @@ header {
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
     font-weight: bold;
-    width: 10%;
+    width: fit-content;
     margin: 0px 14px;
+    cursor: pointer;
 }
 
 .addBtn:hover {
@@ -78,4 +79,135 @@ header {
 .completed {
     text-decoration: line-through;
     opacity: 0.6;
+}
+
+.liTag {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+}
+
+.taskText {
+    margin-left: 20px;
+}
+
+.delete {
+    background: rgb(216, 74, 74);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    position: fixed;
+    right: 30%;
+    cursor: pointer;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+    header {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 8vh;
+    }
+
+    .addTask {
+        width: 30vw;
+        padding: 10px;
+        border: rgb(48, 90, 226) 2px solid;
+        border-radius: 10px;
+    }
+
+    .addTask:focus {
+        outline-style: none;
+        border: rgb(48, 90, 226) 3px solid;
+    }
+
+    .addBtn {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background: #4d75e4;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: medium;
+        font-weight: bold;
+        width: fit-content;
+        margin: 0px 14px;
+    }
+
+    #removeAll {
+        margin-top: 10px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background: #e44d5f;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: medium;
+        font-weight: bold;
+        width: 100%;
+        font-size: small;
+        cursor: pointer;
+    }
+
+    .addBtn:hover {
+        cursor: pointer;
+        padding: 10px 22px;
+        transform-style: preserve-3d;
+    }
+
+    .task {
+        width: 80%;
+        justify-self: center;
+        margin: 10px 20px;
+    }
+
+    #taskForm {
+        display: flex;
+    }
+
+    .completed {
+        text-decoration: line-through;
+        opacity: 0.6;
+    }
+
+    .liTag {
+
+        align-items: center;
+        justify-content: space-around;
+        width: fit-content;
+        position: relative;
+    }
+
+    .taskText {
+        margin-left: 20px;
+    }
+
+    .delete {
+        background: rgb(216, 74, 74);
+        color: rgb(255, 255, 255);
+        border: none;
+        font-size: small;
+        border-radius: 10px;
+        padding: 5px 10px;
+        position: fixed;
+        right: 20px;
+        cursor: pointer;
+    }
 }
