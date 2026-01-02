@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.darkMode {
+    background: #0f172a;
+    color: #f5deb3;
+}
+
+.container {
+    background: white;
+    width: 40vw;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.darkMode .container {
+    background: #020617;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 20px;
+}
+
+.top form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    width: 50%;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    padding: 10px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: #1e40af;
+}
+
+.darkMode button {
+    background: wheat;
+    color: black;
+}
+
+.darkMode button:hover {
+    background: #e5c07b;
+}
+
+#image img {
+    margin: 20px 0;
+    width: 80%;
+}
+
+#attempt {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+#restart {
+    margin-top: 10px;
+    width: 20%;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 950px) {
+    .container {
+        background: white;
+        width: 80vw;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        text-align: center;
+    }
+
+    #image img {
+        margin: 20px 0;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        background: white;
+        width: 80vw;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        text-align: center;
+    }
+
+    #restart {
+        margin-top: 10px;
+        width: 60%;
+    }
+
+    input {
+        padding: 5px;
+        width: 50%;
+        font-size: 16px;
+        border-radius: 6px;
+        border: 2px solid #ccc;
+        text-align: center;
+    }
+
+    #image img {
+        margin: 20px 0;
+        width: 80%;
+    }
+}

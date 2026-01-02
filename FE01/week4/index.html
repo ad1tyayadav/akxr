@@ -4,25 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Guess The Number</title>
 </head>
 
-<body>
-    <header>
-        <h2>Guess The Number!</h2>
-    </header>
-    <div class="top">
-        <form action="">
-            <input type="number">
-            <button class="">
-                Check
-            </button>
-        </form>
+<body class="darkMode">
+    <h2 class="title"> Guess The Number (0 to 100)</h2>
+    <div class="container">
+        <header>
+            <button class="modeBtn"><i class="fa-solid fa-sun"></i></button>
+            <h3 id="best">Best Score : 0</h3>
+        </header>
+
+
+        <div class="top">
+            <form>
+                <input type="number" placeholder="Enter a number">
+                <button class="check">Check</button>
+            </form>
+        </div>
+
+        <div id="image">
+            <img src="" alt="">
+        </div>
+
+        <h2 id="attempt"></h2>
+        <button id="restart">Restart</button>
     </div>
-    <div id="image">
-        <img src="" alt="">
-    </div>
+
     <script src="app.js"></script>
 </body>
+
 
 </html>
